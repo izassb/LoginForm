@@ -4,7 +4,9 @@ import { Form, Input, Button, Checkbox } from 'antd';
 import {
   LoginIn,
   SideImg, 
-  Logo
+  Logo,
+  Mail,
+  Lock,
 } from '../../Assets'
 
 export const Login = () => {
@@ -18,7 +20,7 @@ export const Login = () => {
           Faça seu login
           </div>
           <div className="info">
-            Entre com suas informações de cadastro 
+            Entre com suas informações de cadastro.
           </div>
           <FormStyled>
             <br></br>
@@ -31,7 +33,10 @@ export const Login = () => {
                 }]
               }
             >
-              <Input/>
+              <Input prefix={<img src={Mail} alt='mail icon'/>} 
+              placeholder='Digite seu e-mail'
+              style={{backgroundColor: "transparent"}}
+              />
             </Form.Item>
             <Form.Item  
               label="Senha"
@@ -42,7 +47,10 @@ export const Login = () => {
                 }]
               }
             >
-            <Input></Input>
+            <Input.Password prefix={<img src={Lock} alt='mail icon'/>} 
+              placeholder='Digite sua senha'
+              style={{backgroundColor: "transparent"}}
+            />
             </Form.Item>
             <Form.Item
               name="remember"

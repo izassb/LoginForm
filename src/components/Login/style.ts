@@ -23,6 +23,12 @@ export const Background = styled.div`
     left: 40px;
     justify-self: flex-start;
   }
+
+  @media (max-width: 1200px) {
+    .SideImg {
+      display: none;
+    }
+  } 
 `;
 
 export const LoginBox = styled.div`
@@ -104,13 +110,14 @@ export const FormStyled = styled(Form)`
     align-items: flex-start;
   }
 
-Input {
+input {
   width: 335px;
   height: 44px;
-  background: #24221F;
-  border: 1px solid #868686;
+  background-color: transparent !important;
   box-sizing: border-box;
   border-radius: 4px;
+  border: 1px solid #868686;
+  color: white;
 }
 Button {
   width: 100%;
@@ -133,6 +140,14 @@ Button {
   display: flex;
   justify-content: space-between;
   color: #FFC632;
+}
+
+svg {
+  color: white;
+}
+
+.oeZgC input {
+  color: #473404;
 }
 `
 
