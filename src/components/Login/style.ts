@@ -53,10 +53,9 @@ export const Container = styled.div`
 
   .login {
     font-family: 'Poppins', sans-serif;
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
     font-weight: 600;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 50px;
     color: #D4CCB6;
   }
 
@@ -79,6 +78,7 @@ export const Container = styled.div`
   }
 
   .registro {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +148,32 @@ svg {
 
 .oeZgC input {
   color: #473404;
+  height: 100px;
+  width: 100px;
 }
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #473404;
+  border-color: #473404;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #473404;
+}
+
+.ant-checkbox-checked::after {
+  border: 1px solid #473404;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+  color: white;
+  background-color: #473404;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-aflix-wrapper-disabled):hover {
+  border-color: #FFC632;
+}
+
 `
 
 
