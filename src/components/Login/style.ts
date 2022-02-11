@@ -110,13 +110,17 @@ export const FormStyled = styled(Form)`
 
 input {
   width: 335px;
-  height: 44px;
+  height: 37px;
   background-color: transparent !important;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #868686;
   color: white;
 }
+
+.ant-input-affix-wrapper {
+  border: 1px solid #868686;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 Button {
   width: 100%;
   background-color: #FFC632;
@@ -143,7 +147,6 @@ Button {
 svg {
   color: white;
 }
-
 
 .oeZgC input {
   color: #473404;
@@ -174,7 +177,14 @@ svg {
   border-color: #FFC632;
 }
 
-
+.ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #868686;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
 `
 
 export const Content = styled.div `
