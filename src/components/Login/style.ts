@@ -3,25 +3,20 @@ import { Form } from 'antd';
 
 export const Background = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #191816;
   height: 100vh;
 
   .SideImg {
-    position: absolute;
+    width: 900px;
     height: 100%;
-    left: 1114px;
-    top: 0px;
   }
 
   .logo {
-    display: flex;
     position: absolute;
-    gap: 10px;
-    top: 30px;
+    width: 115px;
+    height: 28px;
     left: 40px;
-    justify-self: flex-start;
+    top: 40px;
   }
 
   @media (max-width: 1200px) {
@@ -36,15 +31,18 @@ export const LoginBox = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #24221F;
-  width: 700px;
-  height: 650px;
-  position: absolute;
+  width: 600px;
+  height: 550px;
   left: 200px;
   border-radius: 4px;
+
+  @media (max-width: 1000px){
+    width: 100%;
+    background-color: #191816;
+    }
 `
 
 export const Container = styled.div`
-  position: absolute;
   width: 334px;
   height: 64px;
   display: flex;
@@ -72,7 +70,7 @@ export const Container = styled.div`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 21px;
     color: #FFC632;
   }
@@ -85,7 +83,7 @@ export const Container = styled.div`
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     color: #FFC632;
   }
@@ -146,6 +144,7 @@ svg {
   color: white;
 }
 
+
 .oeZgC input {
   color: #473404;
   height: 100px;
@@ -153,16 +152,17 @@ svg {
 }
 
 .ant-checkbox-checked .ant-checkbox-inner {
-  background-color: #473404;
-  border-color: #473404;
+  background-color: #FFC632;
+  border-color: #FFC632;
+  color: #473404;
 }
 
 .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
-  border-color: #473404;
+  border-color: #FFC632;
 }
 
 .ant-checkbox-checked::after {
-  border: 1px solid #473404;
+  border: 1px solid #FFC632;
 }
 
 .ant-btn-primary:hover, .ant-btn-primary:focus {
@@ -174,6 +174,18 @@ svg {
   border-color: #FFC632;
 }
 
+
+`
+
+export const Content = styled.div `
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px;
 `
 
 

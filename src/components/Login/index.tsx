@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Container, FormStyled, LoginBox } from "./style";
+import { Background, Container, FormStyled, LoginBox, Content } from "./style";
 import { Form, Input, Button, Checkbox } from 'antd';
 import {
   LoginIn,
@@ -12,6 +12,7 @@ import {
 export const Login = () => {
   return (
     <Background>
+      <Content>
       <img className="logo" src={Logo} alt="" />
       <LoginBox>
         <Container>
@@ -74,6 +75,7 @@ export const Login = () => {
           </div>
         </Container>
       </LoginBox>
+      </Content>
       <img className="SideImg" src={SideImg} alt="" />
     </Background>
   )
